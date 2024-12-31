@@ -18,8 +18,8 @@ body {
     rgba(63, 56, 40, 1.1),
     rgba(193, 193, 193, 0.4)
   ),
-  url('../images/background.jpg') no-repeat center 60%;
-  background-size: cover;
+  url('../images/background.jpg') no-repeat center/cover;
+  
 }
 
 header {
@@ -108,14 +108,14 @@ header .logo {
   border-radius: 20px;
   width: 100%;
   border: 0;
-  background: rgba(74, 59, 7, 0.8);
+  background: rgba(123, 109, 61, 0.8);
   color: #fff;
   font-size: 16px;
   cursor: pointer;
 }
 
 .form-group .btn:hover {
-  background-color: #ff5c4d;
+  background-color: #3e3b36;
 }
 
 .text-container h1 {
@@ -132,5 +132,46 @@ header .logo {
   .wrapper {
     background-position: center 20%;
     background-size: auto 100%; 
+  }
+}
+
+@media (max-width: 768px) {
+  header, 
+  header .header-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-content {
+    flex-direction: column-reverse;
+    justify-content: start;
+    margin: auto;
+    padding: 50px;
+  }
+
+  .main-content form,
+  .main-content .text-container {
+    width: 100%;
+  }
+
+  .main-content h1{
+    font-size: 40px;
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+
+  .main-content p{
+    display: none;
+  }
+}
+
+@media(max-height: 500px) {
+  .main-content {
+    margin: 0 auto;
+  }
+
+  .main-content h1 {
+    font-size: 40px;
   }
 }
