@@ -41,10 +41,11 @@ header .header-right i{
 
 header .header-right a{
   color: #fff;
+  text-decoration: none;
 }
 
 header .header-right a:hover{
-  color: #454545;
+  color: #615e5e;
 }
 
 header .logo {
@@ -115,7 +116,7 @@ header .logo {
 }
 
 .form-group .btn:hover {
-  background-color: #3e3b36;
+  background-color: #615e5e;
 }
 
 .text-container h1 {
